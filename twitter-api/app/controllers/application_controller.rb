@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::API
     include ActionController::HttpAuthentication::Token::ControllerMethods
-    before_action :verify_authentication, except :index
+    before_action :verify_authentication
   
     def verify_authentication
       user = authenticate_with_http_token do |token, options|
@@ -11,6 +11,7 @@ class ApplicationController < ActionController::API
         render json: { error: "You do not have permission to access these resources" }, status: :unauthorized
       end
     end
+
     helper_method :current_user
 
     def current_user    

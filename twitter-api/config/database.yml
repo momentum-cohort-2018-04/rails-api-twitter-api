@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: twitter-api_production
-  username: twitter-api
+  # username: twitter-api
   password: <%= ENV['TWITTER-API_DATABASE_PASSWORD'] %>
