@@ -12,14 +12,15 @@ class Api::V1::UsersController < ApplicationController
     else
       render json: @user.errors, status: :unprocessable_entity
     end
-end
+  end
 
-def index 
-    @myposts = current_user.posts.all
-    render json: @myposts
-end
+  def index 
+      @myposts = current_user.posts.all
+      render json: @myposts
+  end
 
-private
-def user_params
+  private
+  def user_params
     params.require(:user).permit(:username, :password)
+  end
 end
