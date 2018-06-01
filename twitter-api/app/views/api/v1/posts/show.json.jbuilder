@@ -14,6 +14,6 @@ end
 json.data do
   json.id @post.id
   json.attributes do
-    json.text @post.text
+    json.text @post.body
   end
 end

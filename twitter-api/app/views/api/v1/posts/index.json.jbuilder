@@ -1,4 +1,4 @@
 
 json.array! @posts do |post|
-  json.extract! post, :id, :text
+  json.extract! post, :id, :body
 end
