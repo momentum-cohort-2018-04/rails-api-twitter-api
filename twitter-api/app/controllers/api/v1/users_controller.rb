@@ -14,11 +14,6 @@ class Api::V1::UsersController < ApplicationController
     end
   end
 
-  def index 
-      @myposts = current_user.posts.all
-      render json: @myposts
-  end
-
   private
   def user_params
     params.require(:user).permit(:username, :password)
