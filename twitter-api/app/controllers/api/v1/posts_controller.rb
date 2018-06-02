@@ -37,7 +37,11 @@ class Api::V1::PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
-    @post.destroy
+    if current_user == @post.user_id
+      @post.destroy
+    else
+      render json: { error: "You can only delete your own posts" }, status: :unauthorized
+    end
   end
 
   private
