@@ -1031,3 +1031,86 @@ No template found for Api::V1::UsersController#show, rendering head :no_content
 Completed 204 No Content in 113ms (ActiveRecord: 2.9ms)
 
 
+Started GET "/api/v1/users/3" for 127.0.0.1 at 2018-06-02 10:10:43 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Spoonflower/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::UsersController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "yd6pHDUYFd34oMU8G2KAbJLX"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:22
+No template found for Api::V1::UsersController#show, rendering head :no_content
+Completed 204 No Content in 261ms (ActiveRecord: 75.7ms)
+
+
+Started GET "/api/v1/users/3" for 127.0.0.1 at 2018-06-02 10:11:18 -0400
+Processing by Api::V1::UsersController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "yd6pHDUYFd34oMU8G2KAbJLX"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:23
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:9
+No template found for Api::V1::UsersController#show, rendering head :no_content
+Completed 204 No Content in 197ms (ActiveRecord: 17.9ms)
+
+
+Started GET "/api/v1/users/2" for 127.0.0.1 at 2018-06-02 10:11:36 -0400
+Processing by Api::V1::UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "yd6pHDUYFd34oMU8G2KAbJLX"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:23
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:9
+No template found for Api::V1::UsersController#show, rendering head :no_content
+Completed 204 No Content in 153ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/users/2" for 127.0.0.1 at 2018-06-02 10:12:05 -0400
+Processing by Api::V1::UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "yd6pHDUYFd34oMU8G2KAbJLX"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:24
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:9
+Completed 200 OK in 47ms (Views: 5.2ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/api/v1/users/2" for 127.0.0.1 at 2018-06-02 10:13:44 -0400
+Processing by Api::V1::UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "yd6pHDUYFd34oMU8G2KAbJLX"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:9
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 12.7ms)
+
+
+  
+ArgumentError (Unsupported argument type: 2 (Integer)):
+  
+app/controllers/api/v1/users_controller.rb:10:in `show'
+Started GET "/api/v1/users/2" for 127.0.0.1 at 2018-06-02 10:14:16 -0400
+Processing by Api::V1::UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "yd6pHDUYFd34oMU8G2KAbJLX"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:9
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 9.4ms)
+
+
+  
+ArgumentError (Unsupported argument type: 2 (Integer)):
+  
+app/controllers/api/v1/users_controller.rb:10:in `show'
