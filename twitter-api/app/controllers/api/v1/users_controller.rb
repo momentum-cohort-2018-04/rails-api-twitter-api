@@ -7,8 +7,7 @@ class Api::V1::UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @posts = Post.find_by(@user.id)
-    render json: @user.posts
+    render json: @user
   end
 
   def create
