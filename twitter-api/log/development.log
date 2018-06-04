@@ -1437,3 +1437,425 @@ Did you mean?  ids):
 app/controllers/api/v1/users_controller.rb:6:in `index'
   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
   ↳ /Users/jacob/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:27:07 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jacob/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/Users/jacob/Momentum/rails-api-twitter-api/twitter-api/app/controllers/api/v1/users_controller.rb:6: syntax error, unexpected '(', expecting keyword_end
+    render json: @users(params[:username])
+                       ^
+/Users/jacob/Momentum/rails-api-twitter-api/twitter-api/app/controllers/api/v1/users_controller.rb:6: syntax error, unexpected ')', expecting keyword_end
+...json: @users(params[:username])
+...                              ^
+/Users/jacob/Momentum/rails-api-twitter-api/twitter-api/app/controllers/api/v1/users_controller.rb:34: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/v1/users_controller.rb:6: syntax error, unexpected '(', expecting keyword_end
+app/controllers/api/v1/users_controller.rb:6: syntax error, unexpected ')', expecting keyword_end
+app/controllers/api/v1/users_controller.rb:34: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:28:08 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:6
+Completed 200 OK in 15ms (Views: 1.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:29:00 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 3.9ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/api/v1/users_controller.rb:5:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:29:19 -0400
+  
+SyntaxError (/Users/jacob/Momentum/rails-api-twitter-api/twitter-api/app/controllers/api/v1/users_controller.rb:6: syntax error, unexpected '(', expecting keyword_end
+    render json: @users(:username)
+                       ^
+/Users/jacob/Momentum/rails-api-twitter-api/twitter-api/app/controllers/api/v1/users_controller.rb:34: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/v1/users_controller.rb:6: syntax error, unexpected '(', expecting keyword_end
+app/controllers/api/v1/users_controller.rb:34: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:30:44 -0400
+  
+SyntaxError (/Users/jacob/Momentum/rails-api-twitter-api/twitter-api/app/controllers/api/v1/users_controller.rb:6: syntax error, unexpected '(', expecting keyword_end
+    render json: @users(params[:username])
+                       ^
+/Users/jacob/Momentum/rails-api-twitter-api/twitter-api/app/controllers/api/v1/users_controller.rb:6: syntax error, unexpected ')', expecting keyword_end
+...json: @users(params[:username])
+...                              ^
+/Users/jacob/Momentum/rails-api-twitter-api/twitter-api/app/controllers/api/v1/users_controller.rb:34: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/v1/users_controller.rb:6: syntax error, unexpected '(', expecting keyword_end
+app/controllers/api/v1/users_controller.rb:6: syntax error, unexpected ')', expecting keyword_end
+app/controllers/api/v1/users_controller.rb:34: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:32:03 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:6
+Completed 200 OK in 11ms (Views: 0.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:35:45 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+No template found for Api::V1::UsersController#index, rendering head :no_content
+Completed 204 No Content in 108ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:37:22 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template api/v1/users/index.json, application/index.json with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/jacob/Momentum/rails-api-twitter-api/twitter-api/app/views"
+):
+  
+app/controllers/api/v1/users_controller.rb:6:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:38:14 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/_user.json.jbuilder (143.8ms)
+  Rendered users/index.json.jbuilder (152.9ms)
+Completed 500 Internal Server Error in 185ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_url' for #<#<Class:0x00007fa6585ccca8>:0x00007fa6585cad18>):
+    1: json.extract! user, :id, :username, :created_at, :updated_at
+    2: json.url user_url(user, format: :json)
+  
+app/views/users/_user.json.jbuilder:2:in `_app_views_users__user_json_jbuilder__2196361964509807685_70176211850180'
+app/views/users/index.json.jbuilder:1:in `_app_views_users_index_json_jbuilder___4331283735897009751_70176211975920'
+app/controllers/api/v1/users_controller.rb:6:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:39:40 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (28.8ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 2.7ms)
+
+
+  
+ActionView::Template::Error (Missing partial users/_user with {:locale=>[:en], :formats=>[:json, :html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:jbuilder]}. Searched in:
+  * "/Users/jacob/Momentum/rails-api-twitter-api/twitter-api/app/views"
+):
+    1: json.array! @users, partial: 'users/user', as: :user
+  
+app/views/users/index.json.jbuilder:1:in `_app_views_users_index_json_jbuilder___4331283735897009751_70176208117600'
+app/controllers/api/v1/users_controller.rb:6:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:39:55 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jacob/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (24.2ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 3.5ms)
+
+
+  
+ActionView::Template::Error (Missing partial users/_user with {:locale=>[:en], :formats=>[:json, :html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:jbuilder]}. Searched in:
+  * "/Users/jacob/Momentum/rails-api-twitter-api/twitter-api/app/views"
+):
+    1: json.array! @users, partial: 'users/user', as: :user
+  
+app/views/users/index.json.jbuilder:1:in `_app_views_users_index_json_jbuilder___2494833812000404701_70330165869740'
+app/controllers/api/v1/users_controller.rb:6:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:42:11 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  Rendered users/index.json.jbuilder (22.7ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<User::ActiveRecord_Relation:0x00007fee0bab7830>
+Did you mean?  ids):
+    1: 
+    2: json.extract! @users, :id, :username, :created_at, :updated_at
+    3: json.url user_url(user, format: :json)
+  
+app/views/users/index.json.jbuilder:2:in `_app_views_users_index_json_jbuilder___2494833812000404701_70330187360080'
+app/controllers/api/v1/users_controller.rb:6:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:43:14 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  Rendered users/index.json.jbuilder (22.0ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for #<User::ActiveRecord_Relation:0x00007fee0850d090>):
+    1: 
+    2: json.extract! @users, :user_id, :username, :created_at
+    3: json.url user_url(user, format: :json)
+  
+app/views/users/index.json.jbuilder:2:in `_app_views_users_index_json_jbuilder___2494833812000404701_70330159204820'
+app/controllers/api/v1/users_controller.rb:6:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:43:28 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  Rendered users/index.json.jbuilder (23.7ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for #<User::ActiveRecord_Relation:0x00007fee0b95e920>):
+    1: 
+    2: json.extract! @users, :username, :created_at
+    3: json.url user_url(user, format: :json)
+  
+app/views/users/index.json.jbuilder:2:in `_app_views_users_index_json_jbuilder___2494833812000404701_70330186654080'
+app/controllers/api/v1/users_controller.rb:6:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:45:20 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  Rendered users/index.json.jbuilder (20.5ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for #<User::ActiveRecord_Relation:0x00007fee0bb6f5e8>):
+    1: 
+    2: json.(@users, :username, :created_at)
+    3: json.url user_url(user, format: :json)
+  
+app/views/users/index.json.jbuilder:2:in `_app_views_users_index_json_jbuilder___2494833812000404701_70330187737200'
+app/controllers/api/v1/users_controller.rb:6:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:45:59 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  Rendered users/index.json.jbuilder (24.2ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for #<User::ActiveRecord_Relation:0x00007fee0b83a4e0>):
+    1: 
+    2: json.extract! @users, :username, :created_at
+    3: json.url users_url(users, format: :json)
+  
+app/views/users/index.json.jbuilder:2:in `_app_views_users_index_json_jbuilder___2494833812000404701_70330185991260'
+app/controllers/api/v1/users_controller.rb:6:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:46:31 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  Rendered users/index.json.jbuilder (21.7ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for #<User::ActiveRecord_Relation:0x00007fee0ba04848>):
+    1: 
+    2: json.extract!(@users, :username)
+    3: json.url users_url(users, format: :json)
+  
+app/views/users/index.json.jbuilder:2:in `_app_views_users_index_json_jbuilder___2494833812000404701_70330186984800'
+app/controllers/api/v1/users_controller.rb:6:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:46:50 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  Rendered users/index.json.jbuilder (22.2ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for #<User::ActiveRecord_Relation:0x00007fee0947a1e0>):
+    1: 
+    2: json.extract!(@users, :username)
+    3: json.url user_url(user, format: :json)
+  
+app/views/users/index.json.jbuilder:2:in `_app_views_users_index_json_jbuilder___2494833812000404701_70330167303740'
+app/controllers/api/v1/users_controller.rb:6:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:47:03 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  Rendered users/index.json.jbuilder (23.5ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    1: 
+    2: json.extract!(@user, :username)
+    3: json.url user_url(user, format: :json)
+  
+app/views/users/index.json.jbuilder:2:in `_app_views_users_index_json_jbuilder___2494833812000404701_70330186201060'
+app/controllers/api/v1/users_controller.rb:6:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:48:30 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  Rendered users/index.json.jbuilder (258.9ms)
+Completed 500 Internal Server Error in 282ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `username' for #<#<Class:0x00007fee091a5fc8>:0x00007fee09448c80>
+Did you mean?  @users):
+    1: json.extract!(@user, username)
+    2: json.url user_url(user, format: :json)
+  
+app/views/users/index.json.jbuilder:1:in `_app_views_users_index_json_jbuilder___2494833812000404701_70330167203480'
+app/controllers/api/v1/users_controller.rb:6:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:49:33 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  Rendered users/index.json.jbuilder (24.1ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for #<User::ActiveRecord_Relation:0x00007fee0b9cdbb8>):
+    1: 
+    2: json.extract! @users, :username, :created_at
+  
+app/views/users/index.json.jbuilder:2:in `_app_views_users_index_json_jbuilder___2494833812000404701_70330186816120'
+app/controllers/api/v1/users_controller.rb:6:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:50:57 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+  Rendered users/index.json.jbuilder (22.2ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for #<User::ActiveRecord_Relation:0x00007fee0ba76e70>):
+    1: 
+    2: json.(@users, :username)
+  
+app/views/users/index.json.jbuilder:2:in `_app_views_users_index_json_jbuilder___2494833812000404701_70330187216900'
+app/controllers/api/v1/users_controller.rb:6:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:53:41 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (255.6ms)
+Completed 500 Internal Server Error in 276ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `request_form' for #<#<Class:0x00007fee091a5fc8>:0x00007fee094cb540>
+Did you mean?  request):
+    1: json.array! @users do |user|
+    2:   json.username request_form.username
+    3: end
+  
+app/views/users/index.json.jbuilder:2:in `block in _app_views_users_index_json_jbuilder___2494833812000404701_70330167479080'
+app/views/users/index.json.jbuilder:1:in `_app_views_users_index_json_jbuilder___2494833812000404701_70330167479080'
+app/controllers/api/v1/users_controller.rb:6:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:54:31 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (2.6ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-06-04 13:55:08 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."api_token" = $1 LIMIT $2[0m  [["api_token", "zMzYPptp2jcsX4GSBGLdbi26"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (1.5ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.6ms)
+
+
